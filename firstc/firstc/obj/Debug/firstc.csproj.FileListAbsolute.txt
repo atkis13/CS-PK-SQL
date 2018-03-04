@@ -1,0 +1,12 @@
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.csprojResolveAssemblyReference.cache
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.Form1.resources
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.Properties.Resources.resources
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.csproj.GenerateResource.Cache
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.csproj.CoreCompileInputs.cache
+E:\root\myStuff\CS\source\pk\firstc\firstc\bin\Debug\firstc.exe.config
+E:\root\myStuff\CS\source\pk\firstc\firstc\bin\Debug\firstc.exe
+E:\root\myStuff\CS\source\pk\firstc\firstc\bin\Debug\firstc.pdb
+E:\root\myStuff\CS\source\pk\firstc\firstc\bin\Debug\MySql.Data.dll
+E:\root\myStuff\CS\source\pk\firstc\firstc\bin\Debug\MySql.Data.xml
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.exe
+E:\root\myStuff\CS\source\pk\firstc\firstc\obj\Debug\firstc.pdb

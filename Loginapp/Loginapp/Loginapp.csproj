@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E99CF835-EA57-4219-A6AE-AE1A8455656B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Loginapp</RootNamespace>
+    <AssemblyName>Loginapp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Form_Methods.cs" />
+    <Compile Include="frm_Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Browser.Designer.cs">
+      <DependentUpon>frm_Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_getHTML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_getHTML.Designer.cs">
+      <DependentUpon>frm_getHTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HTML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HTML.Designer.cs">
+      <DependentUpon>frm_HTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LoginForm.Designer.cs">
+      <DependentUpon>frm_LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Mail.Designer.cs">
+      <DependentUpon>frm_Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MainForm.Designer.cs">
+      <DependentUpon>frm_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MDI.Designer.cs">
+      <DependentUpon>frm_MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mdi1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mdi1.Designer.cs">
+      <DependentUpon>frm_mdi1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mdi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mdi2.Designer.cs">
+      <DependentUpon>frm_mdi2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_notepad.Designer.cs">
+      <DependentUpon>frm_notepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Screenshot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Screenshot.Designer.cs">
+      <DependentUpon>frm_Screenshot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Speech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Speech.Designer.cs">
+      <DependentUpon>frm_Speech.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_splash_screen.Designer.cs">
+      <DependentUpon>frm_splash_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update.Designer.cs">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MediaPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MediaPlayer.Designer.cs">
+      <DependentUpon>frm_MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Encryption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Encryption.Designer.cs">
+      <DependentUpon>frm_Encryption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Browser.resx">
+      <DependentUpon>frm_Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_getHTML.resx">
+      <DependentUpon>frm_getHTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_HTML.resx">
+      <DependentUpon>frm_HTML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LoginForm.resx">
+      <DependentUpon>frm_LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Mail.resx">
+      <DependentUpon>frm_Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainForm.resx">
+      <DependentUpon>frm_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDI.resx">
+      <DependentUpon>frm_MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mdi1.resx">
+      <DependentUpon>frm_mdi1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mdi2.resx">
+      <DependentUpon>frm_mdi2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_notepad.resx">
+      <DependentUpon>frm_notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Screenshot.resx">
+      <DependentUpon>frm_Screenshot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Speech.resx">
+      <DependentUpon>frm_Speech.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_splash_screen.resx">
+      <DependentUpon>frm_splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update.resx">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MediaPlayer.resx">
+      <DependentUpon>frm_MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Encryption.resx">
+      <DependentUpon>frm_Encryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
